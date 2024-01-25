@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -7,6 +8,43 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      ideaRed: "#D51C23",
+      footerBg: "#F6F8F7",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      red: colors.red,
+      blue: colors.blue,
+      green: colors.green,
+      pink: colors.pink,
+      purple: colors.purple,
+      rose: colors.rose,
+      orange: colors.orange,
+      lime: colors.lime,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      fuchsia: colors.fuchsia,
+      violet: colors.violet,
+      sky: colors.lightBlue,
+      amber: colors.amber,
+      neutral: colors.trueGray,
+      stone: colors.warmGray,
+      slate: colors.blueGray,
+      transparent: "transparent",
+      current: "currentColor",
+    },
+    screens: {
+      xs: "0px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1500px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

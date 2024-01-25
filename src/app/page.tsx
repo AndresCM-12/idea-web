@@ -1,113 +1,91 @@
+"use client"
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const chart = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    //After 3 seconds remove the fourth child of the chart div
+    setTimeout(() => {
+      if (chart.current != null && chart.current.children.length > 3) {
+        chart.current.removeChild(chart.current.children[3]);
+      }
+    }, 3000);
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main className="pt-48 items-center bg-white">
+      {/* Main section */}
+      <div className="flex flex-wrap-reverse gap-4 justify-between w-full md:px-28 sm:px-10 xs:px-4">
+        <div className="flex flex-col justify-center items-start">
+        <h2 className="text-4xl text-ideaRed font-bold mb-8">BIENVENIDO</h2>
+        <p className="max-w-sm">Sabemos que todo gran sueño comienza con una gran Idea.
+          En Idea Diseño estamos comprometidos en ofrecerte Soluciones Integrales de Publicidad, haciéndote destacar, impulsando al máximo tu negocio para impactar a tus clientes. 
+          Prepárate para que todos te conozcan.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <p className="font-semibold italic">¡Tu Idea ahora en manos de los expertos en Publicidad!</p>
+        <Link href="/productos">
+         <div className="bg-ideaRed text-white font-bold py-3 px-6 rounded-full mt-8 text-xs hover:scale-95 transition-all">
+           Productos y Servicios
+         </div>
+        </Link>
         </div>
+        <Image className="max-w-7xl md:w-1/2 sm:w-2/3 xs:w-full" width={10} height={10} src={"/images/idea.png"} alt="idea diseño imagen" />
       </div>
+     {/* Main section */}
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+     {/* Servicios section */}
+     <h2 className="text-4xl font-bold mt-24 mb-16 md:px-28 sm:px-10 xs:px-4">SERVICIOS / PRODUCTOS</h2>
+     <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 row-span-full gap-x-8 gap-y-14 w-full text-center text-ideaRed font-bold text-2xl md:px-28 sm:px-10 xs:px-4">
+      <Link href={"/productos/lonasyviniles"}> 
+      <div className="h-full max-h-48">
+        <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/lonas.svg"} alt="idea diseño imagen" />
+        <h3 className="mt-4">LONAS Y VINILES</h3>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      </Link>
+      <div className="h-full max-h-48">
+        <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/imprenta.svg"} alt="idea diseño imagen" />
+        <h3 className="mt-4">IMPRENTA DIGITAL</h3>
       </div>
+      <div className="h-full max-h-48">
+        <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/letras.svg"} alt="idea diseño imagen" />
+        <h3 className="mt-4">LETRAS 3D</h3>
+      </div>
+      <div className="h-full max-h-48">
+        <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/anuncios.svg"} alt="idea diseño imagen" />
+        <h3 className="mt-4">ANUNCIOS<br/>LUMINOSOS</h3>
+      </div>
+      <div className="h-full max-h-48">
+        <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/corte.svg"} alt="idea diseño imagen" />
+        <h3 className="mt-4">CORTE Y GRABADO<br/>LÁSER</h3>
+      </div>
+      <div className="h-full max-h-48">
+        <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/serigrafia.svg"} alt="idea diseño imagen" />
+        <h3 className="mt-4">SERIGRAFÍA</h3>
+      </div>
+     </div>
+     <Link href={"/productos"}>
+      <div className="grid items-center justify-center bg-ideaRed text-white font-bold py-3 px-6 rounded-full mt-20 mb-20 text-xs w-40 mx-auto hover:scale-95 transition-all">
+          Ver más
+       </div>
+     </Link>
+     {/* Servicios section */}
+
+     {/* About us section */}
+     <div className="text-white relative w-full grid items-center justify-center text-center py-64 md:px-28 sm:px-10 xs:px-4">
+      <p className="relative z-10 max-w-screen-sm">Sabemos que todo gran sueño comienza con una gran Idea. Es por eso que en Idea Diseño estamos comprometidos en ofrecerte soluciones integrales de publicidad, haciendo destacar, impulsando al máximo tu negocio para impactar tus clientes. Y prepárate para que todos te conozcan.</p>
+      <p className="relative font-bold z-10 mt-4">¡Tu Idea ahora en manos de los expertos en publicidad!</p>
+      <Link href={"/nosotros"} >
+      <div className="relative z-10 grid items-center justify-center bg-ideaRed text-white font-bold py-3 px-6 rounded-full mt-4 text-xs w-40 mx-auto hover:scale-95 transition-all">
+          Conócenos
+       </div>
+       </Link>
+       <Image className="absolute top-0 right-0 w-full h-full object-cover z-0" width={10} height={10} src={"/images/hero_home.png"} alt="idea diseño imagen" />
+     </div>
+     {/* About us section */}
+     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+     <div ref={chart} className="elfsight-app-1c967fb0-458c-47fe-bf54-1c616072a33e py-20 md:px-28 sm:px-10 xs:px-4" data-elfsight-app-lazy >Cargando</div>
     </main>
   );
 }
