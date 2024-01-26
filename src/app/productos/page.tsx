@@ -12,10 +12,12 @@ export default function Productos() {
         <h3 className="mt-4">LONAS Y VINILES</h3>
       </div>
       </Link>
+      <Link href={"productos/imprentadigital"}>      
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/imprenta.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">IMPRENTA DIGITAL</h3>
       </div>
+      </Link>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/letras.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">LETRAS 3D</h3>

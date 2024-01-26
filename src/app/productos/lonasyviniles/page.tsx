@@ -10,11 +10,14 @@ export default function LonasyViniles(){
         infinite: true,
         autoplay: true,
         speed: 500,
+        pauseOnFocus: true,
+        pauseOnHover: true,
         slidesToShow: 1,
+        accessibility: false,
         slidesToScroll: 1,
-        centerMode: false,
         focusOnSelect: false,
         arrows: false,
+        adaptiveHeight: true,
       };
 
     return (
@@ -27,11 +30,11 @@ export default function LonasyViniles(){
         <Image className="absolute right-0 top-1/2 -translate-y-1/2 sm:flex xs:hidden" height={200} width={70} alt="i del logo idea" src={"/products/i-inverted.svg"} />
         </div>
         {/* Lonas slider */}
-        <div className="mt-20">
+        <div className="mt-20 xxl:px-48 md:px-0">
             <h3 className="text-4xl font-bold text-ideaRed mb-5">LONAS</h3>
-            <Slider className="mx-auto" {...settings}>
+            <Slider key={"slider_1"} className="one mx-auto" {...settings}>
              <div>
-              <Image className="h-full w-full object-fill object-center" width={10} height={10} src={"/products/lonasyviniles/lonas1.png"} alt="imagen de lonas" />
+              <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/lonasyviniles/lonas1.png"} alt="imagen de lonas" />
              </div>
              <div>
               <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/lonas2.png"} alt="imagen de lonas" />
@@ -41,9 +44,9 @@ export default function LonasyViniles(){
         {/* Lonas slider */}
         
         {/* Bastidores slider */}
-        <div className="mt-12">
+        <div className="pt-12 xxl:px-48 md:px-0">
             <h3 className="text-4xl font-bold text-ideaRed mb-5">BASTIDORES</h3>
-            <Slider  className="mx-auto" {...settings}>
+            <Slider key={"slider_2"} className="two mx-auto" {...settings}>
              <div>
               <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/bastidores1.png"} alt="imagen de lonas" />
              </div>
@@ -70,14 +73,47 @@ export default function LonasyViniles(){
         {/* Bastidores slider */}
 
         {/* Viniles slider */}
-        <div className="mt-20">
+        <div className="pt-20 xxl:px-48 md:px-0">
             <h3 className="text-4xl font-bold text-ideaRed mb-5">VINILES</h3>
-            <Slider  className="mx-auto " {...settings}>
+            <Slider key={"slider_3"} className="three mx-auto " {...settings}>
              <div>
-              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/lonas1.png"} alt="imagen de lonas" />
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil1.png"} alt="imagen de lonas" />
              </div>
              <div>
-              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/lonas2.png"} alt="imagen de lonas" />
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil2.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil3.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil4.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil5.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil6.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil7.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil8.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil9.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil10.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil11.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil12.png"} alt="imagen de lonas" />
+             </div>
+             <div>
+              <Image className="h-full w-full object-contain object-center" width={10} height={10} src={"/products/lonasyviniles/vinil13.png"} alt="imagen de lonas" />
              </div>
             </Slider>
         </div>
