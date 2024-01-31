@@ -18,46 +18,66 @@ export default function Productos() {
         <h3 className="mt-4">IMPRENTA DIGITAL</h3>
       </div>
       </Link>
+      <Link href={"productos/letras3d"}>      
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/letras.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">LETRAS 3D</h3>
       </div>
+      </Link>
+      <Link href={"productos/anunciosluminosos"}>      
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/anuncios.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">ANUNCIOS<br/>LUMINOSOS</h3>
       </div>
+      </Link>
+      <Link href={"productos/corteygrabado"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/corte.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">CORTE Y GRABADO<br/>LÁSER</h3>
       </div>
+      </Link>
+      <Link href={"productos/serigrafia"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/serigrafia.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">SERIGRAFÍA</h3>
       </div>
+      </Link>
+      <Link href={"productos/sublimacion"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/sublimacion.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">SUBLIMACIÓN</h3>
       </div>
+      </Link>
+      <Link href={"productos/rotulacion"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/rotulacion.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">ROTULACIÓN</h3>
       </div>
+      </Link>
+      <Link href={"productos/bordadotextil"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/bordado.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">BORDADO TEXTIL</h3>
       </div>
+      </Link>
+      <Link href={"productos/señalamientos"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/señalamiento.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">SEÑALAMIENTOS</h3>
       </div>
+      </Link>
+      <Link href={"productos/articulospromocionales"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/articulos.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">ARTÍCULOS<br/>PROMOCIONALES</h3>
       </div>
+      </Link>
+      <Link href={"productos/otros"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/otros.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">OTROS</h3>
       </div>
+      </Link>
      </div>
     </main>
     );

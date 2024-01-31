@@ -50,22 +50,30 @@ export default function Home() {
         <h3 className="mt-4">IMPRENTA DIGITAL</h3>
       </div>
       </Link>
+      <Link href={"productos/letras3d"}>      
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/letras.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">LETRAS 3D</h3>
       </div>
+      </Link>
+      <Link href={"productos/anunciosluminosos"}>      
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/anuncios.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">ANUNCIOS<br/>LUMINOSOS</h3>
       </div>
+      </Link>
+      <Link href={"productos/corteygrabado"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/corte.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">CORTE Y GRABADO<br/>LÁSER</h3>
       </div>
+      </Link>
+      <Link href={"productos/serigrafia"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/serigrafia.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">SERIGRAFÍA</h3>
       </div>
+      </Link>
      </div>
      <Link href={"/productos"}>
       <div className="grid items-center justify-center bg-ideaRed text-white font-bold py-3 px-6 rounded-full mt-20 mb-20 text-xs w-40 mx-auto hover:scale-95 transition-all">

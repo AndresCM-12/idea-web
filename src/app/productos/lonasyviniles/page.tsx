@@ -123,7 +123,7 @@ export default function LonasyViniles(){
             <p>Lonas Full Color de alta resolución, resistentes, duraderas y diseños de<br/>impacto <span className="text-ideaRed">¡En todos los Tamaños!</span></p>
             <p className="mt-4 font-bold">¡Deja a tus clientes plasmados! Viniles para prácticamente cualquier<br/>superficie en tamaño o forma.</p>
             <p className="mt-4">Un gran negocio requiere la mejor presentación.<br/>Bastidores publicitarios que brindaran<br/>esa increíble Imagen.</p>
-            <Link href={"/productos"}>
+            <Link href={"/contacto"}>
                 <div className="grid items-center justify-center bg-ideaRed text-white font-bold py-3 px-6 rounded-full mt-8 text-xs w-60 mx-auto hover:scale-95 transition-all">
                 COTIZA TU PROYECTO AQUÍ
                 </div>
