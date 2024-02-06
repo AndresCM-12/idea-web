@@ -60,7 +60,7 @@ export default function Productos() {
         <h3 className="mt-4">BORDADO TEXTIL</h3>
       </div>
       </Link>
-      <Link href={"productos/señalamientos"}>
+      <Link href={"productos/senalamientos"}>
       <div className="h-full max-h-48">
         <Image className="w-full h-3/5 object-contain hover:scale-95 transition-all" width={10} height={10} src={"/home/señalamiento.svg"} alt="idea diseño imagen" />
         <h3 className="mt-4">SEÑALAMIENTOS</h3>

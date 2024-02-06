@@ -47,22 +47,19 @@ export default function Rotulacion() {
         <div className="lg:px-72 md:px-28 sm:px-10 xs:px-4 w-full">
          <Slider className="mt-20 xxl:px-48 md:px-0" {...settings}>
           <div>
-           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/sublimacion/sublimacion1.png"} alt="imagen de corte y grabado láser" />
+           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/rotulacion/rotulacion1.png"} alt="imagen de corte y grabado láser" />
           </div>
           <div>
-           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/sublimacion/sublimacion2.png"} alt="imagen de corte y grabado láser" />
+           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/rotulacion/rotulacion2.png"} alt="imagen de corte y grabado láser" />
           </div>
           <div>
-           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/sublimacion/sublimacion3.png"} alt="imagen de corte y grabado láser" />
+           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/rotulacion/rotulacion3.png"} alt="imagen de corte y grabado láser" />
           </div>
           <div>
-           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/sublimacion/sublimacion4.png"} alt="imagen de corte y grabado láser" />
+           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/rotulacion/rotulacion4.png"} alt="imagen de corte y grabado láser" />
           </div>
           <div>
-           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/sublimacion/sublimacion5.png"} alt="imagen de corte y grabado láser" />
-          </div>
-          <div>
-           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/sublimacion/sublimacion6.png"} alt="imagen de corte y grabado láser" />
+           <Image className="h-full w-full object-fill " width={10} height={10} src={"/products/rotulacion/rotulacion5.png"} alt="imagen de corte y grabado láser" />
           </div>
          </Slider>
         </div>

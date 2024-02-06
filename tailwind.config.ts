@@ -46,6 +46,10 @@ const config: Config = {
       xxl: "1500px",
     },
     extend: {
+      height: {
+        otros1: "550px",
+        otros: "650px"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
