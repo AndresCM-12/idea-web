@@ -6,7 +6,7 @@ import Slider, { Settings } from "react-slick";
 
 export default function LonasyViniles(){
     var settings: Settings  = {
-        dots: true,
+        dots: false,
         infinite: true,
         autoplay: true,
         speed: 500,
