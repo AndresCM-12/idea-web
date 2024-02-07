@@ -31,7 +31,7 @@ export default function Home() {
          </div>
         </Link>
         </div>
-        <Image className="max-w-7xl md:w-1/2 sm:w-2/3 xs:w-full" width={10} height={10} src={"/images/idea.png"} alt="idea diseño imagen" />
+        <Image className="max-w-7xl lg:w-1/2 xs:w-full" width={10} height={10} src={"/images/idea.png"} alt="idea diseño imagen" />
       </div>
      {/* Main section */}
 

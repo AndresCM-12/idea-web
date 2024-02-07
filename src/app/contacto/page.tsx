@@ -4,10 +4,10 @@ export default function Contacto() {
     return (
         <main className="min-h-screen items-center justify-between bg-white">
             <div className="w-full h-full relative">
-             <Image className="w-full h-4/6 object-cover" src={"/contact/hero.png"} width={10} height={10} alt="Imagen de demostración"/>
+             <Image className="w-full md:h-4/6 xs:h-96 object-cover" src={"/contact/hero.png"} width={10} height={10} alt="Imagen de demostración"/>
              <div className="bg-white h-96 w-full"></div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 md:max-w-4xl sm:max-w-md xs:max-w-80 w-full">
-                <form action="https://formsubmit.co/clientes@idea-diseno.com" method="POST" className="bg-ideaRed flex flex-col lg:pl-48 md:px-20 xs:px-5 py-16 gap-4 w-full relative">
+                <form action="https://formsubmit.co/clientes@idea-diseno.com" method="POST" className="bg-ideaRed flex flex-col lg:pl-48 md:px-20 xs:px-5 py-16 gap-4 w-full relative select-all">
                     <h3 className="text-white font-bold text-2xl">CONTÁCTANOS:</h3>
                     <input className="p-2" type="text" name="Nombre" placeholder="Tu nombre:" />
                     <input className="p-2" type="text" name="Correo" placeholder="Correo:" />
